@@ -1,0 +1,219 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+body {
+    background-color: #f9c5d1;
+    background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff6b6b;
+    transition: transform 0.3s ease;
+}
+
+#profile-pic:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+#profile-name {
+    font-size: 1.8rem;
+    color: #6b6bff;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff6b6b;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.about-section li:before {
+    content: "🐽";
+    position: absolute;
+    left: 0;
+}
+
+/* Video Gallery */
+.video-gallery {
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.video h3 {
+    margin-bottom: 10px;
+    color: #6b6bff;
+}
+
+.video video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Quotes Section */
+.quotes {
+    text-align: center;
+}
+
+.quote-container {
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.quote-container p {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.quote-container p:before {
+    content: """;
+    font-size: 40px;
+    position: absolute;
+    left: 5px;
+    top: -10px;
+    color: #ff6b6b;
+}
+
+.quote-container p:after {
+    content: """;
+    font-size: 40px;
+    position: absolute;
+    right: 5px;
+    bottom: -30px;
+    color: #ff6b6b;
+}
+
+button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4f4f;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px 20px 0 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+#visits {
+    font-weight: bold;
+    color: #6b6bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    #profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+    
+    #profile-name {
+        font-size: 1.5rem;
+    }
+    
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .video {
+        min-width: 100%;
+    }
+}
